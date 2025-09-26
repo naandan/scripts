@@ -13,24 +13,27 @@
     const params = new URLSearchParams(window.location.search);
     const status = params.get("status");
 
-    // bikin instance toast
     const Toast = Swal.mixin({
       toast: true,
-      position: 'top-end',
+      position: "top-end",
       showConfirmButton: false,
       timer: 3000,
-      timerProgressBar: true
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+      }
     });
 
     if (status === "success") {
       Toast.fire({
-        icon: 'success',
-        title: 'Form berhasil dikirim!'
+        icon: "success",
+        title: "Form berhasil dikirim!"
       });
     } else if (status === "error") {
       Toast.fire({
-        icon: 'error',
-        title: 'Form gagal dikirim!'
+        icon: "error",
+        title: "Form gagal dikirim!"
       });
     }
   }
