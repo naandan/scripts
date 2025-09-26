@@ -7,7 +7,7 @@ Koleksi script sederhana yang bisa dipakai lewat **CDN**.
 Panggil script lewat jsDelivr dengan format:
 
 ```
-https://cdn.jsdelivr.net/gh/naandan/scripts/[filename].js
+https://cdn.jsdelivr.net/gh/naandan/scripts@latest/[filename].js
 ```
 
 Ganti `[filename].js` dengan nama file yang mau dipakai.
@@ -15,7 +15,7 @@ Ganti `[filename].js` dengan nama file yang mau dipakai.
 Contoh:
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/naandan/scripts/form-status.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/naandan/scripts@latest/form-status.js"></script>
 ```
 
 ## Cara nyimpen script
@@ -25,7 +25,7 @@ Contoh:
 * Script langsung bisa dipanggil lewat URL:
 
 ```
-https://cdn.jsdelivr.net/gh/naandan/scripts/toast.js
+https://cdn.jsdelivr.net/gh/naandan/scripts@latest/toast.js
 ```
 
 ## Daftar script
