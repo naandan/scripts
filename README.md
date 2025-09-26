@@ -10,7 +10,7 @@ Panggil script lewat jsDelivr dengan format:
 https://cdn.jsdelivr.net/gh/naandan/scripts@[commit hash]/[filename].js
 ```
 
-Ganti `[filename].js` dengan nama file yang mau dipakai.
+Ganti `[filename].js` dengan nama file yang mau dipakai dan `[commit hash]` dengan hash dari commit repository sesuai versi yang dipilih.
 
 Contoh:
 
