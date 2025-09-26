@@ -30,11 +30,21 @@
         icon: "success",
         title: "Form berhasil dikirim!"
       });
+      clearParams();
     } else if (status === "error") {
       Toast.fire({
         icon: "error",
         title: "Form gagal dikirim!"
       });
+      clearParams();
     }
+  }
+
+  function clearParams() {
+    setTimeout(() => {
+      // Hapus query string tanpa reload halaman
+      const url = window.location.origin + window.location.pathname;
+      window.history.replaceState({}, document.title, url);
+    }, 5000); // 5 detik
   }
 })();
